@@ -1,0 +1,76 @@
+.navbar {
+  background-color: #1a1a1a !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00d4ff !important;
+  cursor: pointer;
+  text-decoration: none !important;
+}
+
+.navbar-logo:hover {
+  color: #00a8cc !important;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  position: relative;
+}
+
+.nav-link {
+  color: #00d4ff !important;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid transparent;
+}
+
+.nav-link:hover {
+  color: #00a8cc !important;
+  border-bottom-color: #00d4ff;
+}
+
+/* Icono hamburguesa Bootstrap */
+.navbar-toggler {
+  border: none !important;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%2300d4ff' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Responsive - Mobile */
+@media (max-width: 768px) {
+  .navbar-logo {
+    font-size: 1.2rem;
+  }
+
+  .nav-link {
+    font-size: 0.95rem;
+  }
+}
